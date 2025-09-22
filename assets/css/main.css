@@ -745,6 +745,72 @@ h6 {
   }
 }
 
+.contact .info {
+  padding: 30px;
+  background: #fff;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+}
+
+.contact .info i {
+  font-size: 20px;
+  color: #175543;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #dff3fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact .info h4 {
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #050d18;
+}
+
+.contact .info p {
+  padding: 0 0 10px 60px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #173b6c;
+}
+
+.contact .info .email p {
+  padding-top: 5px;
+}
+
+.contact .info .email:hover i,
+.contact .info .address:hover i {
+  background: #175543;
+  color: #fff;
+}
+
+/* Alterar o icone do telefone para whatsapp ao passar o mouse */
+
+.contact .info .phone:hover i {
+  background: #25D366;
+  color: #fff;
+}
+
+.phone a i {
+  font-size: 24px;
+  transition: 0.3s ease-in-out; /* Suaviza a transição */
+}
+
+.phone a:hover i::before {
+  content: "\F618"; /* Código do ícone do WhatsApp no Bootstrap Icons */
+  font-family: "Bootstrap Icons"; /* Define a fonte correta */
+}
+
 input[type=text],
 input[type=email],
 textarea {
