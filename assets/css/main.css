@@ -1233,7 +1233,7 @@ section,
   position: absolute;
   bottom: -2rem;
   left: -2rem;
-  background-color: var(--surface-color);
+  background-color: #fcffa3;
   padding: 2rem;
   border-radius: 12px;
   max-width: 320px;
