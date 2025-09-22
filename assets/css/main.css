@@ -664,8 +664,8 @@ h6 {
 
 .footer .footer-bottom .copyright p {
   margin: 0;
-  font-size: 14px;
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  font-size: 11px;
+  color: color-mix(in srgb, var(--default-color), transparent 80%);
 }
 
 @media (max-width: 991px) {
@@ -709,9 +709,9 @@ h6 {
 }
 
 .footer .footer-bottom .credits {
-  text-align: right;
-  font-size: 13px;
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  text-align: left;
+  font-size: 11px;
+  color: color-mix(in srgb, var(--default-color), transparent 80%);
 }
 
 @media (max-width: 991px) {
@@ -763,7 +763,7 @@ textarea:focus {
 input[type=text]::placeholder,
 input[type=email]::placeholder,
 textarea::placeholder {
-  color: color-mix(in srgb, var(--default-color), transparent 70%);
+  color: color-mix(in srgb, var(--default-color), transparent 80%);
 }
 
 /*--------------------------------------------------------------
@@ -2538,16 +2538,16 @@ section,
 }
 
 .faq .faq-item.faq-active .faq-header .faq-number {
-  color: var(--accent-color);
+  color: #febe16;
   font-weight: 500;
 }
 
 .faq .faq-item.faq-active .faq-header h4 {
-  color: var(--accent-color);
+  color: #febe16;
 }
 
 .faq .faq-item.faq-active .faq-header .faq-toggle {
-  color: var(--accent-color);
+  color: #febe16;
   transform: rotate(0deg);
 }
 
@@ -2568,6 +2568,7 @@ section,
 }
 
 .faq .faq-item:not(.faq-active) .faq-header .faq-toggle i.bi-plus {
+  color:#ffffff;
   opacity: 1;
   transform: rotate(0deg);
 }
@@ -2578,19 +2579,24 @@ section,
 }
 
 .faq .faq-item .faq-header {
+  background-color: #175543;
   display: flex;
   align-items: center;
-  padding: 40px 0;
+  padding: 20px 40px;
+  border-radius: 15px 15px 15px 15px;
+  position: relative;
   cursor: pointer;
   gap: 0;
   transition: all 0.3s ease;
 }
 
 .faq .faq-item .faq-header:hover .faq-number {
+  color:#febe16;
   transform: scale(1.1);
 }
 
 .faq .faq-item .faq-header:hover .faq-toggle {
+  color: #febe16;
   transform: scale(1.1);
 }
 
@@ -2600,7 +2606,7 @@ section,
   font-family: var(--heading-font);
   font-size: 1.1rem;
   font-weight: 300;
-  color: color-mix(in srgb, var(--default-color), transparent 50%);
+  color: #ffffff;
   transition: all 0.3s ease;
   letter-spacing: -0.02em;
 }
@@ -2611,7 +2617,7 @@ section,
   font-family: var(--heading-font);
   font-size: 1.25rem;
   font-weight: 300;
-  color: var(--heading-color);
+  color: #ffffff;
   transition: all 0.3s ease;
   line-height: 1.5;
   letter-spacing: -0.01em;
@@ -2625,7 +2631,7 @@ section,
   display: flex;
   align-items: center;
   justify-content: center;
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  color: color-mix(in srgb, var(--default-color), transparent 80%);
   font-size: 18px;
   transition: all 0.3s ease;
   position: relative;
@@ -2651,7 +2657,7 @@ section,
 
 .faq .faq-item .faq-content .content-inner p {
   margin: 0;
-  color: color-mix(in srgb, var(--default-color), transparent 25%);
+  color: color-mix(in srgb, var(--default-color), transparent 10%);
   line-height: 1.8;
   font-size: 1rem;
   font-weight: 300;

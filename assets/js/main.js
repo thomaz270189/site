@@ -217,4 +217,24 @@
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
 
+  /**
+   * Init Typed.js (typewriter effect)
+   */
+  const typedElement = document.querySelector('.typed');
+  if (typedElement && typeof Typed !== 'undefined') {
+    const items = typedElement.getAttribute('data-typed-items');
+    if (items) {
+      const strings = items.split(',').map(s => s.trim()).filter(Boolean);
+      if (strings.length > 0) {
+        new Typed('.typed', {
+          strings: strings,
+          loop: true,
+          typeSpeed: 80,
+          backSpeed: 40,
+          backDelay: 1500
+        });
+      }
+    }
+  }
+
 })();
