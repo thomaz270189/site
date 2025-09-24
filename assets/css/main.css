@@ -2469,7 +2469,7 @@ section,
   .services .services-showcase .services-list .service-item {
     padding: 1.5rem;
     flex-direction: column;
-    text-align: center;
+    text-align: left; /* alinha à esquerda no mobile */
   }
 
   .services .services-showcase .services-list .service-item .service-icon {
