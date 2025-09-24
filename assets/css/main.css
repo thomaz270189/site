@@ -2504,6 +2504,10 @@ section,
 }
 
 @media (max-width: 768px) {
+  .services.section .testimonial-image {
+    margin-top: 2rem; /* adiciona espaçamento superior no mobile */
+  }
+  
   .services.section .testimonial-image img {
     max-width: 320px;
   }
