@@ -2513,6 +2513,11 @@ section,
   }
 }
 
+/* Ajuste de tamanho para o link do sitemap */
+.sitemap-link {
+  font-size: 0.7rem; /* ajuste o tamanho conforme necessário */
+}
+
 /* Estilos específicos para a seção de benefícios com image-wrapper */
 .services .image-wrapper {
   position: relative;
