@@ -2466,7 +2466,7 @@ section,
     margin-bottom: 4rem;
   }
 
-  .services .services-showcase .services-list .service-item {
+  .services .services-showcase .services-list .service-item .service-content {
     padding: 1.5rem;
     flex-direction: column;
     text-align: left; /* alinha à esquerda no mobile */
