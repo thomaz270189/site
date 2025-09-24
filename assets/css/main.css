@@ -2482,6 +2482,33 @@ section,
   }
 }
 
+/* Ajustes para imagens tipo depoimento dentro da seção de serviços */
+.services.section .testimonial-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.services.section .testimonial-image img {
+  display: block;
+  width: 100%;
+  max-width: 430px; /* limita a largura máxima para não estourar o layout */
+  height: auto;
+}
+
+@media (max-width: 992px) {
+  .services.section .testimonial-image img {
+    max-width: 420px;
+  }
+}
+
+@media (max-width: 768px) {
+  .services.section .testimonial-image img {
+    max-width: 320px;
+  }
+}
+
 /* Estilos específicos para a seção de benefícios com image-wrapper */
 .services .image-wrapper {
   position: relative;
