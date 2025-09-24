@@ -1,3 +1,34 @@
+/* Swiper navigation positioning for Implantação cards */
+.implantacao-swiper {
+  position: relative;
+  padding: 0 48px; /* space for arrows outside the slides */
+}
+
+.implantacao-swiper .swiper-button-prev,
+.implantacao-swiper .swiper-button-next {
+  width: 36px;
+  height: 36px;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #0a0a0a;
+}
+
+.implantacao-swiper .swiper-button-prev {
+  left: -8px; /* move to outside left */
+}
+
+.implantacao-swiper .swiper-button-next {
+  right: -8px; /* move to outside right */
+}
+
+/* Improve visibility on small screens: keep arrows near content */
+@media (max-width: 575.98px) {
+  .implantacao-swiper { padding: 0 36px; }
+  .implantacao-swiper .swiper-button-prev { left: 0; }
+  .implantacao-swiper .swiper-button-next { right: 0; }
+}
 /**
 * Template Name: LeadPage
 * Template URL: https://bootstrapmade.com/leadpage-bootstrap-landing-page-template/
