@@ -234,6 +234,7 @@ img {
 
 .mission-box {
     background-color: var(--primary-color);
+    text-decoration-color: #FFFFFF;
     color: var(--white);
     padding: 20px;
     border-radius: 8px;
