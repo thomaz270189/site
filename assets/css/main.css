@@ -1197,7 +1197,7 @@ section,
   left: 0;
   width: 100%;
   height: 100%;
-  background: color-mix(in srgb, var(--background-color), transparent 20%);
+  background: color-mix(in srgb, var(--background-color), transparent 25%);
   z-index: 2;
 }
 
