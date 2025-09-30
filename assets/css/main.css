@@ -1449,11 +1449,79 @@ section,
   .about {
     padding: 80px 0;
   }
+  
+  .about-content {
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .about-text {
+    order: 1;
+  }
+  
+  .about-image {
+    order: 2;
+    text-align: center;
+  }
+  
+  .about-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+  }
+  
+  .mission-box {
+    margin-top: 30px;
+    padding: 25px 20px;
+    text-align: center;
+  }
+  
+  .mission-box h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .mission-box p {
+    font-size: 15px;
+    line-height: 1.5;
+  }
 }
+
 
 @media (max-width: 576px) {
   .about {
     padding: 60px 0;
+  }
+  
+  .about-content {
+    gap: 25px;
+  }
+  
+  .about-text p {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+  
+  .mission-box {
+    padding: 20px 15px;
+    margin-top: 25px;
+  }
+  
+  .mission-box h3 {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+  
+  .mission-box p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  
+  .about-image img {
+    max-width: 280px;
+    width: 100%;
+    height: auto;
   }
 }
 
