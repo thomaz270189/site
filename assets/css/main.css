@@ -23,24 +23,105 @@
   right: -8px; /* move to outside right */
 }
 
+/* Inplantação simples*/
+/* Como Funciona */
+.how-it-works {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.steps {
+  flex: 1;
+}
+
+.step {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.step-number {
+  width: 50px;
+  height: 50px;
+  background-color: var(--primary-color);
+  color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 700;
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+
+.step-content h3 {
+  margin-bottom: 10px;
+  color: var(--primary-color);
+}
+
+.process-image {
+  flex: 1;
+}
+
+.process-image img {
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.implementation h3 {
+  text-align: center;
+  font-size: 24px;
+  color: var(--primary-color);
+  margin-bottom: 30px;
+}
+
+.implementation-steps {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.implementation-step {
+  flex: 1;
+  min-width: 200px;
+  text-align: center;
+  padding: 20px;
+  background-color: var(--white);
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.step-icon {
+  width: 60px;
+  height: 60px;
+  background-color: var(--primary-color);
+  color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 15px;
+}
+
+.step-icon i {
+  font-size: 24px;
+}
+
+.implementation-step h4 {
+  margin-bottom: 10px;
+  color: var(--primary-color);
+}
+
 /* Improve visibility on small screens: keep arrows near content */
 @media (max-width: 575.98px) {
   .implantacao-swiper { padding: 0 36px; }
   .implantacao-swiper .swiper-button-prev { left: 0; }
   .implantacao-swiper .swiper-button-next { right: 0; }
 }
-/**
-* Template Name: LeadPage
-* Template URL: https://bootstrapmade.com/leadpage-bootstrap-landing-page-template/
-* Updated: Aug 12 2025 with Bootstrap v5.3.7
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-/*--------------------------------------------------------------
-# Font & Color Variables
-# Help: https://bootstrapmade.com/color-system/
---------------------------------------------------------------*/
 /* Fonts */
 :root {
   --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -48,7 +129,7 @@
   --nav-font: "Montserrat",  sans-serif;
 }
 
-/* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
+/* Global Colors */
 :root { 
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #1a1715; /* Default color used for the majority of the text content across the entire website */
@@ -56,9 +137,16 @@
   --accent-color: #175543; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+  --primary-color: #175543;
+  --secondary-color: #ff5e14;
+  --white: #FFFFFF;
+  --black: #333333;
+  --light-gray: #f5f5f5;
+  --gray: #888888;
+  --dark-gray: #555555;
 }
 
-/* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
+/* Nav Menu Colors */
 :root {
   --nav-color: rgba(255, 255, 255, 0.8);  /* The default color of the main navmenu links */
   --nav-hover-color: #febe16; /* Applied to main navmenu links when they are hovered over or active */
@@ -68,7 +156,7 @@
   --nav-dropdown-hover-color: #175543; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
-/* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
+/* Color Presets */
 
 .light-background {
   --background-color: #fffaf2;
@@ -695,7 +783,7 @@ h6 {
 
 .footer .footer-bottom .copyright p {
   margin: 0;
-  font-size: 11px;
+  font-size: 13px;
   color: color-mix(in srgb, var(--default-color), transparent 80%);
 }
 
@@ -778,7 +866,7 @@ h6 {
 
 .contact .info {
   padding: 30px;
-  background: #fff;
+  background: #f2f8f6;
   width: 100%;
   max-width: 600px;
   margin: 0 auto;
@@ -1172,6 +1260,18 @@ section,
 .hero .hero-buttons .btn.btn-primary:hover {
   background-color: color-mix(in srgb, var(--accent-color), black 15%);
   border-color: color-mix(in srgb, var(--accent-color), black 15%);
+  transform: translateY(-2px);
+}
+
+.hero .hero-buttons .btn.btn-secondary {
+  background-color: var(--secondary-color);
+  color: var(--contrast-color);
+  border-color: var(--secondary-color);
+}
+
+.hero .hero-buttons .btn.btn-secondary:hover {
+  background-color: color-mix(in srgb, var(--secondary-color), black 15%);
+  border-color: color-mix(in srgb, var(--secondary-color), black 15%);
   transform: translateY(-2px);
 }
 
@@ -3419,124 +3519,6 @@ section,
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
-.contact .contact-form-container {
-  padding: 60px 0;
-}
-
-.contact .contact-form-container .form-intro {
-  margin-bottom: 60px;
-}
-
-.contact .contact-form-container .form-intro h2 {
-  font-size: 36px;
-  font-weight: 300;
-  line-height: 1.3;
-  margin-bottom: 20px;
-  color: var(--heading-color);
-  letter-spacing: -0.5px;
-}
-
-@media (max-width: 768px) {
-  .contact .contact-form-container .form-intro h2 {
-    font-size: 28px;
-  }
-}
-
-.contact .contact-form-container .form-intro p {
-  font-size: 18px;
-  line-height: 1.7;
-  color: var(--default-color);
-  margin-bottom: 0;
-  opacity: 0.85;
-}
-
-.contact .contact-form-container .contact-form .row {
-  margin-bottom: 40px;
-}
-
-.contact .contact-form-container .contact-form .row:last-of-type {
-  margin-bottom: 0;
-}
-
-.contact .contact-form-container .contact-form .form-field {
-  position: relative;
-  margin-bottom: 40px;
-}
-
-.contact .contact-form-container .contact-form .form-field.message-field {
-  margin-bottom: 50px;
-}
-
-.contact .contact-form-container .contact-form .form-field .field-label {
-  position: absolute;
-  top: -10px;
-  left: 0;
-  font-size: 13px;
-  font-weight: 500;
-  color: var(--heading-color);
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-  opacity: 0.8;
-}
-
-.contact .contact-form-container .contact-form .form-field .form-input {
-  width: 100%;
-  border: none;
-  border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 80%);
-  background: transparent;
-  padding: 20px 0 15px 0;
-  font-size: 16px;
-  color: var(--default-color);
-  transition: all 0.3s ease;
-}
-
-.contact .contact-form-container .contact-form .form-field .form-input:focus {
-  outline: none;
-  border-bottom-color: var(--accent-color);
-  background: transparent;
-}
-
-.contact .contact-form-container .contact-form .form-field .form-input::placeholder {
-  color: color-mix(in srgb, var(--default-color), transparent 60%);
-  opacity: 1;
-}
-
-.contact .contact-form-container .contact-form .form-field .message-input {
-  resize: vertical;
-  min-height: 120px;
-  font-family: inherit;
-  padding-top: 25px;
-}
-
-.contact .contact-form-container .contact-form .send-button {
-  background: transparent;
-  border: 1px solid var(--accent-color);
-  color: var(--accent-color);
-  padding: 18px 40px;
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  display: inline-flex;
-  align-items: center;
-  gap: 15px;
-  transition: all 0.3s ease;
-  cursor: pointer;
-}
-
-.contact .contact-form-container .contact-form .send-button .button-arrow {
-  font-size: 18px;
-  transition: transform 0.3s ease;
-}
-
-.contact .contact-form-container .contact-form .send-button:hover {
-  background: var(--accent-color);
-  color: var(--contrast-color);
-}
-
-.contact .contact-form-container .contact-form .send-button:hover .button-arrow {
-  transform: translateX(5px);
-}
 
 .contact .contact-sidebar {
   background: color-mix(in srgb, var(--accent-color), transparent 97%);
