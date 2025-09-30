@@ -112,7 +112,9 @@
 
 .implementation-step h4 {
   margin-bottom: 10px;
+  font-size: 20px;
   color: var(--primary-color);
+  font-weight: bold;
 }
 
 /* Improve visibility on small screens: keep arrows near content */
