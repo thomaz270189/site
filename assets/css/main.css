@@ -939,6 +939,7 @@ background: var(--light-gray);
   height: 40px;
   border-radius: 4px;
   transition: all 0.4s;
+  border: 1px solid #FFFFFF;
 }
 
 .scroll-top i {
@@ -1988,17 +1989,20 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Features Cards Section
+# Features Cards Section - Como Funciona
 --------------------------------------------------------------*/
 .features-cards .feature-card {
   height: 100%;
   background-color: var(--surface-color);
   border-radius: 16px;
-  padding: 2.5rem;
+  padding: 2.5rem; /* para reduzir o tamanho do card 2.25rem reduz em 10% o tamanho do card */
   box-shadow: 0 10px 30px color-mix(in srgb, var(--default-color), transparent 94%);
   position: relative;
   overflow: hidden;
   transition: 0.3s;
+/*  max-width: 90%; /* ~10% menor largura do card dentro da coluna, mantendo conteúdo intacto */
+/* margin-left: auto; /* centraliza o card dentro da coluna */
+/* margin-right: auto; /* centraliza o card dentro da coluna */
 }
 
 .features-cards .feature-card:hover {
