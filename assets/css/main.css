@@ -622,14 +622,15 @@ h6 {
   font-family: var(--heading-font);
 }
 
+/* Sublinhado no footer: abaixo de Siga-nos */
 .footer h4:after {
   content: "";
   position: absolute;
   left: 0;
   bottom: -8px;
-  width: 30px;
+  width: 70px;
   height: 2px;
-  background-color: var(--accent-color);
+  background-color: var(--secondary-color);
 }
 
 .footer .footer-links ul {
