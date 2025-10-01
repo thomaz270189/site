@@ -2671,6 +2671,11 @@ section,
 
 .app-store-btn:hover {
   background-color: var(--dark-gray);
+  color: var(--white);
+}
+
+.app-store-btn:hover i {
+  color: var(--white);
 }
 
 /* Ajustes para imagens tipo depoimento dentro da seção de serviços */
