@@ -819,45 +819,7 @@ document.querySelectorAll('[data-link-type="linkWhatsapp"]').forEach(el => {
 });
   </script>
 
-  <!-- <script>
-    // Alterar o número de telefone usando um único local
-const telefone = "(11) 98144-5066";
-
-// Atualize todos os elementos com a classe 'phone-number'
-document.querySelectorAll('.phone-number').forEach(el => {
-  el.textContent = telefone;
-});
-
-  </script> -->
-<!-- <script>
-   // Alterar link dinamicamente usando unico local
-    let baseDeLinks = {
-            linkWhatsapp: "https://api.whatsapp.com/send/?phone=5511981445066"
-            
-        };
-
-        function atualizarLinks() {
-            // Seleciona todos os links que você quer atualizar dinamicamente
-            // Por exemplo, usando uma classe ou um atributo data-*
-            const elementosLink = document.querySelectorAll('[data-link-type]');
-
-            elementosLink.forEach(link => {
-                const linkType = link.getAttribute('data-link-type');
-                if (baseDeLinks[linkType]) {
-                    link.href = baseDeLinks[linkType];
-                }
-            });
-        }
-
-        // Chame a função para inicializar os links
-        document.addEventListener('DOMContentLoaded', atualizarLinks);
-
-        // Exemplo de como você pode mudar o valor da variável e reatualizar
-        function alterarLink() {
-            baseDeLinks.paginaInicial = "/novo/caminho/para/home.html";
-            atualizarLinks(); // Chama a função para atualizar todos os links
-        }
-</script> -->
+  
 </body>
 
 </html>
