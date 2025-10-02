@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Folder de Divulgação - Bem Fácil Mercadinho</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        /* Cores da marca */
+        :root {
+            --brand-green-dark: #1e463a;
+            --brand-green-light: #2a6350;
+            --brand-orange: #f58220;
+            --brand-navy: #1c2a44;
+            --brand-yellow: #fddb00;
+        }
+        .bg-brand-green-dark { background-color: var(--brand-green-dark); }
+        .bg-brand-orange { background-color: var(--brand-orange); }
+        .text-brand-orange { color: var(--brand-orange); }
+        .text-brand-green-dark { color: var(--brand-green-dark); }
+        .border-brand-orange { border-color: var(--brand-orange); }
+
+        .folder-panel {
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .icon-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .icon-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+<!--
+    <div class="container mx-auto p-4 md:p-8">
+        <h1 class="text-3xl md:text-4xl font-bold text-center text-brand-green-dark mb-4">Prévia do Folder | Bem Fácil Mercadinho</h1>
+        <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">Este é um layout digital que simula as dobras de um folder. O conteúdo foi pensado para impactar síndicos e moradores.</p>
+-->
+        <!-- Simulação do Folder -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+            <!-- Painel 1: Capa -->
+            <div class="col-span-1 md:col-span-3 bg-white rounded-xl shadow-lg p-8 flex flex-col items-center justify-center text-center folder-panel" style="background: linear-gradient(135deg, var(--brand-green-dark) 0%, var(--brand-green-light) 100%);">
+                <div class="w-48 md:w-64 mb-6">
+                    <!-- 
+                        NOTA: Se a logo não aparecer na pré-visualização, não se preocupe.
+                        O link está correto. Isso pode ser uma restrição de segurança do ambiente de visualização.
+                        Ao salvar o arquivo .html e abri-lo em seu navegador, a imagem será exibida corretamente.
+                    -->
+                    <img src="assets/img/Logo-Final.png" alt="Logo Bem Fácil Mercadinho" class="w-full h-auto">
+                </div>
+                <h2 class="text-3xl md:text-5xl font-bold text-white leading-tight mt-4">A conveniência que faltava no seu condomínio.</h2>
+                <p class="text-lg md:text-xl text-white mt-6 max-w-2xl">
+                    Compras rápidas, fáceis e seguras, 24 horas por dia, sem sair de casa.
+                </p>
+            </div>
+
+            <!-- Painel 2: Benefícios para o Morador -->
+            <div class="col-span-1 md:col-span-3 bg-white rounded-xl shadow-lg p-8 folder-panel">
+                <div class="md:grid md:grid-cols-2 md:gap-12 items-center">
+                    <div class="text-center md:text-left">
+                        <span class="text-brand-orange font-semibold">PARA MORADORES</span>
+                        <h3 class="text-4xl font-bold text-brand-green-dark mt-2 mb-6">Mais praticidade para o seu dia a dia.</h3>
+                        <p class="text-gray-600 mb-8">Imagine ter a liberdade de comprar o que precisa, a qualquer hora, com a segurança e o conforto do seu lar.</p>
+                         <!-- Imagem ilustrativa -->
+                        <div class="hidden md:block">
+                           <img src="https://placehold.co/500x350/f58220/ffffff?text=Facilidade+e+Conforto" alt="Pessoa comprando com facilidade" class="rounded-lg shadow-md">
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-8 md:mt-0">
+                        <!-- Card Benefício 1 -->
+                        <div class="bg-gray-50 p-6 rounded-lg icon-card border-l-4 border-brand-orange">
+                            <h4 class="font-bold text-lg text-brand-green-dark">Sempre Aberto</h4>
+                            <p class="text-sm mt-2">Faltou um ingrediente ou bateu aquela fome de madrugada? O mercadinho está disponível 24/7 para você.</p>
+                        </div>
+                        <!-- Card Benefício 2 -->
+                        <div class="bg-gray-50 p-6 rounded-lg icon-card border-l-4 border-brand-orange">
+                            <h4 class="font-bold text-lg text-brand-green-dark">Mix de Produtos</h4>
+                            <p class="text-sm mt-2">De itens de mercearia a lanches, bebidas, congelados e produtos de higiene. Tudo o que você precisa!</p>
+                        </div>
+                        <!-- Card Benefício 3 -->
+                        <div class="bg-gray-50 p-6 rounded-lg icon-card border-l-4 border-brand-orange">
+                            <h4 class="font-bold text-lg text-brand-green-dark">Segurança Total</h4>
+                            <p class="text-sm mt-2">Compre com tranquilidade dentro do seu condomínio, com ambiente monitorado por câmeras.</p>
+                        </div>
+                        <!-- Card Benefício 4 -->
+                        <div class="bg-gray-50 p-6 rounded-lg icon-card border-l-4 border-brand-orange">
+                            <h4 class="font-bold text-lg text-brand-green-dark">Tecnologia Simples</h4>
+                            <p class="text-sm mt-2">Use nosso app para uma experiência de compra moderna. É só escanear, pagar e levar!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <!-- Painel 3: Benefícios para o Síndico/Condomínio -->
+            <div class="col-span-1 md:col-span-3 bg-brand-green-dark text-white rounded-xl shadow-lg p-8 folder-panel">
+                <div class="md:grid md:grid-cols-2 md:gap-12 items-center">
+                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 order-2 md:order-1 mt-8 md:mt-0">
+                        <!-- Card Benefício 1 -->
+                        <div class="bg-brand-green-light p-6 rounded-lg icon-card border-l-4 border-brand-orange">
+                            <h4 class="font-bold text-lg">Valorização do Imóvel</h4>
+                            <p class="text-sm mt-2 opacity-90">Um serviço moderno e desejado que agrega valor ao condomínio e atrai novos moradores.</p>
+                        </div>
+                        <!-- Card Benefício 2 -->
+                         <div class="bg-brand-green-light p-6 rounded-lg icon-card border-l-4 border-brand-orange">
+                            <h4 class="font-bold text-lg">Custo Zero</h4>
+                            <p class="text-sm mt-2 opacity-90">Cuidamos de toda a instalação, abastecimento e manutenção, sem nenhum custo para o condomínio.</p>
+                        </div>
+                        <!-- Card Benefício 3 -->
+                        <div class="bg-brand-green-light p-6 rounded-lg icon-card border-l-4 border-brand-orange">
+                            <h4 class="font-bold text-lg">Operação Segura</h4>
+                            <p class="text-sm mt-2 opacity-90">Sistema 100% automatizado, com monitoramento 24h por câmeras, garantindo segurança para todos.</p>
+                        </div>
+                        <!-- Card Benefício 4 -->
+                        <div class="bg-brand-green-light p-6 rounded-lg icon-card border-l-4 border-brand-orange">
+                            <h4 class="font-bold text-lg">Satisfação Garantida</h4>
+                            <p class="text-sm mt-2 opacity-90">Ofereça um benefício que facilita a vida dos moradores e gera um alto índice de satisfação.</p>
+                        </div>
+                    </div>
+                    <div class="text-center md:text-left order-1 md:order-2">
+                        <span class="text-brand-orange font-semibold">PARA SÍNDICOS E GESTORES</span>
+                        <h3 class="text-4xl font-bold mt-2 mb-6">Um grande diferencial para o seu condomínio.</h3>
+                        <p class="opacity-90">Modernize seu condomínio com uma solução inovadora que traz conveniência e aumenta a qualidade de vida dos moradores, sem dor de cabeça para a gestão.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Painel 4: Como Funciona & Contato -->
+            <div class="col-span-1 md:col-span-3 bg-white rounded-xl shadow-lg p-8 folder-panel text-center">
+                 <h3 class="text-3xl font-bold text-brand-green-dark">É Bem Fácil, veja como funciona:</h3>
+                 <div class="mt-10 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+                     <!-- Passo 1 -->
+                     <div class="flex flex-col items-center">
+                        <div class="bg-brand-orange text-white rounded-full w-20 h-20 flex items-center justify-center text-3xl font-bold">1</div>
+                        <h4 class="font-semibold mt-4">Baixe o App</h4>
+                        <p class="text-sm text-gray-600 mt-1">Disponível para Android e iOS.</p>
+                     </div>
+                     <!-- Passo 2 -->
+                     <div class="flex flex-col items-center">
+                        <div class="bg-brand-orange text-white rounded-full w-20 h-20 flex items-center justify-center text-3xl font-bold">2</div>
+                        <h4 class="font-semibold mt-4">Libere a entrada</h4>
+                        <p class="text-sm text-gray-600 mt-1">Escaneie o QR Code na porta.</p>
+                     </div>
+                     <!-- Passo 3 -->
+                     <div class="flex flex-col items-center">
+                        <div class="bg-brand-orange text-white rounded-full w-20 h-20 flex items-center justify-center text-3xl font-bold">3</div>
+                        <h4 class="font-semibold mt-4">Pegue o que quiser</h4>
+                        <p class="text-sm text-gray-600 mt-1">Escolha seus produtos nas prateleiras.</p>
+                     </div>
+                     <!-- Passo 4 -->
+                     <div class="flex flex-col items-center">
+                        <div class="bg-brand-orange text-white rounded-full w-20 h-20 flex items-center justify-center text-3xl font-bold">4</div>
+                        <h4 class="font-semibold mt-4">Pague no App</h4>
+                        <p class="text-sm text-gray-600 mt-1">Escaneie o código de barras e pague.</p>
+                     </div>
+                 </div>
+
+                 <div class="mt-16 bg-gray-50 p-8 rounded-lg max-w-3xl mx-auto">
+                     <h4 class="text-2xl font-bold text-brand-green-dark">Leve o Bem Fácil Mercadinho para o seu condomínio!</h4>
+                     <p class="mt-3 text-gray-600">Entre em contato conosco e agende uma apresentação. É rápido, sem compromisso e o seu condomínio só tem a ganhar.</p>
+                     <a href="http://www.bemfacilmercadinho.com.br" target="_blank" class="mt-6 inline-block bg-brand-orange text-white font-bold py-3 px-8 rounded-lg shadow-lg hover:bg-opacity-90 transition-transform transform hover:scale-105">
+                         QUERO NO MEU CONDOMÍNIO
+                     </a>
+                     <div class="mt-6 text-sm">
+                         <p class="text-gray-700"><strong>www.bemfacilmercadinho.com.br</strong></p>
+                         <p class="text-gray-500">contato@bemfacilmercadinho.com.br | (XX) XXXX-XXXX</p>
+                     </div>
+                 </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
+
