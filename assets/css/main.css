@@ -892,14 +892,27 @@ background: var(--light-gray);
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
-#preloader {
+/*#preloader {
   position: fixed;
   inset: 0;
   z-index: 999999;
   overflow: hidden;
   background: var(--background-color);
   transition: all 0.6s ease-out;
+}*/
+#preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 999999;
+  overflow: hidden;
+  background-color: var(--background-color);
+  background-image: url('../img/cesta-icone.png'); /* Sua imagem aqui */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40px; /* Tamanho da cesta, ajuste se necessário */
+  transition: all 0.6s ease-out;
 }
+
 
 #preloader:before {
   content: "";
